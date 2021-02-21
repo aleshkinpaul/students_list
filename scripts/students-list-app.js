@@ -168,6 +168,13 @@
 
         studentFilterTitle.addEventListener('click', function() {
             studentsListFilterForm.hidden = !studentsListFilterForm.hidden;
+            if (studentFilterTitle.classList.contains('form-spoiler-closed')) {
+                studentFilterTitle.classList.remove('form-spoiler-closed');
+                studentFilterTitle.classList.add('form-spoiler-opened');
+            } else {
+                studentFilterTitle.classList.remove('form-spoiler-opened');
+                studentFilterTitle.classList.add('form-spoiler-closed');
+            };
         });
 
         return {
