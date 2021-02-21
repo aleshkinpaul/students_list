@@ -1,0 +1,56 @@
+
+.form-div {
+    margin: 25px 0;
+}
+
+.form-spoiler-closed::after {
+    padding: 0 0 0 15px;
+    position: absolute;
+    content: "\25BC";
+    font-size: 14px;
+    top: 5px;
+}
+
+.form-spoiler-opened::after {
+    padding: 0 0 0 15px;
+    position: absolute;
+    content: "\25B2";
+    font-size: 14px;
+    top: 5px;
+}
+
+.form-spoiler-closed,
+.form-spoiler-opened,
+.header-sort-link {
+    position: relative;
+}
+
+.form-spoiler {
+    margin-bottom: 15px;
+}
+
+.form-spoiler:hover {
+    cursor: pointer;
+}
+
+.header-sort-link:hover {
+    cursor: pointer;
+    background-color: rgba(181, 198, 223, 0.5);
+}
+
+.header-asc-sort-link,
+.header-desc-sort-link {
+    background-color: rgba(181, 198, 223, 0.5) !important;
+}
+
+.header-asc-sort-link::after {
+    position: absolute;
+    right: 20px;
+    content: "\2193";
+}
+
+.header-desc-sort-link::after {
+    position: absolute;
+    right: 20px;
+    content: "\2191";
+}
